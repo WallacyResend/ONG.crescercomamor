@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/main.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -29,44 +31,37 @@
                 <figure>
                     <img src="../assets/images/imagem2.png" alt="Acolhimento de crianças" />
                 </figure>
-                
+
                 <fieldset>
                     <legend>Dados Pessoais</legend>
 
                     <div class="form-group">
                         <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" required minlength="5" 
-                               placeholder="Digite seu nome completo">
+                        <input type="text" id="nome" name="nome" required minlength="5"
+                            placeholder="Digite seu nome completo">
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required 
-                               placeholder="seu@email.com">
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
                     </div>
 
                     <div class="form-group">
                         <label for="cpf">CPF</label>
-                        <input type="text" id="cpf" name="cpf" required
-                               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                               placeholder="000.000.000-00"
-                               title="Digite um CPF válido" 
-                               inputmode="numeric">
+                        <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            placeholder="000.000.000-00" title="Digite um CPF válido" inputmode="numeric">
                     </div>
 
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" required
-                               placeholder="(00) 00000-0000"
-                               pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
-                               title="Digite um telefone válido" 
-                               inputmode="tel">
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"
+                            pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" title="Digite um telefone válido"
+                            inputmode="tel">
                     </div>
 
                     <div class="form-group">
                         <label for="nascimento">Data de Nascimento</label>
-                        <input type="date" id="nascimento" name="nascimento" 
-                               required max="2007-12-31">
+                        <input type="date" id="nascimento" name="nascimento" required max="2007-12-31">
                     </div>
                 </fieldset>
 
@@ -97,68 +92,67 @@
 
                     <div class="form-group">
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="4" 
-                                  placeholder="Conte-nos um pouco sobre seu interesse em participar e como gostaria de contribuir"></textarea>
+                        <textarea id="mensagem" name="mensagem" rows="4"
+                            placeholder="Conte-nos um pouco sobre seu interesse em participar e como gostaria de contribuir"></textarea>
                     </div>
                 </fieldset>
-    </fieldset>
-<br/>
-    <fieldset>
-        <legend>Endereço</legend>
+                
+                <fieldset>
+                    <legend>Endereço</legend>
 
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, complemento">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, complemento">
 
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" required
-               pattern="\d{5}-\d{3}" placeholder="00000-000"
-               title="Formato de CEP: 00000-000" inputmode="numeric">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000"
+                        title="Formato de CEP: 00000-000" inputmode="numeric">
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
 
-        <label for="estado">Estado:</label>
-        <select id="estado" name="estado" required>
-            <option value="">Selecione...</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-        </select>
-    </fieldset>
- <fieldset class="form-submit-section">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset class="form-submit-section">
                     <div class="form-confirmation">
-                        <p class="confirmation-text">Ao enviar este formulário, você concorda em participar do projeto Crescer com Amor e confirma que todas as informações fornecidas são verdadeiras.</p>
+                        <p class="confirmation-text">Ao enviar este formulário, você concorda em participar do projeto
+                            Crescer com Amor e confirma que todas as informações fornecidas são verdadeiras.</p>
                     </div>
-                    <button type="submit" class="btn">Enviar Cadastro</button>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+                        <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+                    </div>
                 </fieldset>
-    <div>
-        <br/>
-        <button type="submit">Finalizar Cadastro</button>
-        <button type="reset">Limpar</button>
-    </div>
-</form>
 
+
+            </form>

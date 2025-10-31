@@ -494,6 +494,68 @@ header {
     transform: translateY(-100%);
 }
 
+/* Grupo de botões do formulário */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Estilo base para os botões */
+form .btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+/* Botão primário (enviar) */
+form .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #357abd);
+    color: white;
+}
+
+form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    background: linear-gradient(135deg, #357abd, var(--primary-color));
+}
+
+/* Botão secundário (reset) */
+form .btn-secondary {
+    background: linear-gradient(135deg, #6c757d, #495057);
+    color: white;
+}
+
+form .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+    background: linear-gradient(135deg, #495057, #6c757d);
+}
+
+/* Efeito de clique nos botões */
+form .btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade dos botões */
+@media (max-width: 576px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    form .btn {
+        width: 100%;
+    }
+}
+
 /* Utilitários */
 .text-center { text-align: center; }
 .mt-2 { margin-top: 2rem; }
